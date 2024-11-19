@@ -52,7 +52,7 @@ const Product = ({ product, updateCart, onClick }) => {
             >
                 <img
                     className="rounded-lg object-cover mx-auto mb-3"
-                    src={`${product.image}`}
+                    src={`/${product.image}`}
                     alt={product.name}
                     width={110}
                     height={110}
