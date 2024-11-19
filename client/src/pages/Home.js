@@ -10,14 +10,18 @@ const Home = ({ updateCart }) => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
+                // const response = await fetch(
+                //     `${process.env.REACT_APP_API_URL}/api/products`
+                // );
+                // const data = await response.json();
+                // setProducts(data);
+                // setFilteredproducts(data);
                 const response = await fetch(
-                    `${process.env.REACT_APP_API_URL}/api/products`
+                    `https://fakestoreapi.com/products`
                 );
                 const data = await response.json();
                 setProducts(data);
                 setFilteredproducts(data);
-                // setProducts(dummy);
-                // setFilteredproducts(dummy);
 
             } catch (error) {
                 console.error("Error fetching products:", error);
@@ -30,7 +34,7 @@ const Home = ({ updateCart }) => {
 
     useEffect(() => {
         setFilteredproducts((prevState) => products.filter(ele =>
-            ele.name.toLowerCase().includes(filter.title.toLowerCase())))
+            ele.title.toLowerCase().includes(filter.title.toLowerCase())))
     }, [filter])
 
     if (loading) {

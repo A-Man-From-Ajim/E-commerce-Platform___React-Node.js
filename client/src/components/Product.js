@@ -52,14 +52,14 @@ const Product = ({ product, updateCart, onClick }) => {
             >
                 <img
                     className="rounded-lg object-cover mx-auto mb-3"
-                    src={`/${product.image}`}
+                    src={`${product.image}`}
                     alt={product.name}
                     width={110}
                     height={110}
                 />
                 <div className="text-center">
                     <h5 className="font-semibold text-gray-800 text-sm">
-                        {product.name}
+                        {product.title}
                     </h5>
                     <p className="text-[orangered] text-sm font-medium mt-1">
                         {product.price}$

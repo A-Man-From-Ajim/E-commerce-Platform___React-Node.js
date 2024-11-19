@@ -16,7 +16,7 @@ const Cart = ({ inCart, updateCart }) => {
                 <div className="text-center w-full">
 
                     <p className='inline mr-1'>Click on Checkout if you wish to proceed</p>
-                    <button className='bg-orange-500  text-white text-xs font-normal py-1 px-2 rounded-md active:scale-95' onClick={() => navigate('/checkout')}>Checkout</button>
+                    <button className='bg-red-600  text-white text-xs font-normal py-1 px-2 rounded-md active:scale-95' onClick={() => navigate('/checkout')}>Checkout</button>
                 </div>
             </div>
         </>
