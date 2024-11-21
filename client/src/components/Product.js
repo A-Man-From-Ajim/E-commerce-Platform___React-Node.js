@@ -59,7 +59,7 @@ const Product = ({ product, updateCart, onClick }) => {
                 />
                 <div className="text-center">
                     <h5 className="font-semibold text-gray-800 text-sm">
-                        {product.title}
+                        {product.name}
                     </h5>
                     <p className="text-[orangered] text-sm font-medium mt-1">
                         {product.price}$

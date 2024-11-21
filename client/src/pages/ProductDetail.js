@@ -25,7 +25,7 @@ export default function ProductDetail() {
             }
         };
         fetchProduct();
-    })
+    }, [])
 
     if (loading) return <h1>...Loading</h1>
 

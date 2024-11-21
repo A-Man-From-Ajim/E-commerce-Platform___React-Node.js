@@ -16,7 +16,7 @@ const checkout = ({ inCart }) => {
                 {inCart.map(product => {
                     return <>
                         <tr>
-                            <td className="border border-white bg-cyan-700 p-2">{product.title}</td>
+                            <td className="border border-white bg-cyan-700 p-2">{product.name}</td>
                             <td className="border border-white bg-cyan-700 p-2">{product.quantity}</td>
                             <td className="border border-white bg-cyan-700 p-2">{product.price}$</td>
                             <td className="border border-white bg-cyan-700 p-2">{product.price * product.quantity}$</td>
